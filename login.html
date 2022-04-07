@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="assets/fontawesome-free-6.1.1-web/css/all.css"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap">
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-300">
+    <div class="containers bg-gray-100 flex">
+      <div
+        class="content-login-div  w-11/12 md:w-8/12 p-8 md:px-16 lg:px-40 lg:w-8/12 m-auto"
+      >
+      <!-- == LOGIN FORM HERDER == -->
+        <section class="COMPANY-NAME">
+          <div class="font-medium text-center text-2xl mb-4">Cal.com</div>
+          <div class="font-semibold text-center text-1xl md:text-3xl mb-4">Sign in to your account</div>
+        </section>
+        <!-- == LOGIN FORM SECTION == -->
+        <section
+          id="REGISTER-FORM"
+          class="lg:w-full border rounded p-8 w-full bg-white"
+        >
+          <div class="form-section">
+            <form action="" class="">
+              <!-- == FORM LOGIN EMAIL == -->
+              <div class="mb-6">
+                <label for="email" class="font-semibold">Email address</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="border font-semibold py-2 w-full mt-1 px-3"
+                />
+              </div>
+              <!-- == FORM LOGIN PASSWORD == -->
+              <div class="mb-6">
+                <div class="flex justify-between">
+                  <label for="password" class="font-semibold">Password</label>
+                   <div><a href="#" class="font-semibold">Forget?</a></div> </div>
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  class="border font-semibold py-2 mt-1 w-full px-3"
+                />
+              </div>
+              <!-- == FORM LOGIN BUTTON == -->
+              <div class="login-btn">
+                <button
+                  type="submit"
+                  class="bg-black text-white px-4 py-3 rounded font-medium w-full"
+                >
+                  Sign in
+                </button>
+              </div>
+            </form>
+          </div>
+        </section>
+        <!-- == NEW USER WITHOUT LOGIN DETAILS == -->
+        <section class="CREATE-ACCOUNT-SECTION">
+          <div class="flex item-center justify-center font-medium text-xs py-4">
+            <span class="text-gray-500 mr-2">Don't have an account?</span
+            ><a href="create-account.html" class="text-black font-semibold">Create an account</a>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

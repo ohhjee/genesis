@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- m-auto bottom-60 left-0  right-0 top-auto absolute -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- == FONTAWESOME ICON == -->
+    <link rel="stylesheet" href="assets/fontawesome-free-6.1.1-web/css/all.css"/>
+      <!-- == GOOGLE FONT == -->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap">
+    <!-- == TAILWIND STYLE CSS == -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+  
+    <!-- == TAB CSS == -->
+    <link rel="stylesheet" href="assets/css/tab.css">
+  </head>
+  <body class="bg-gray-100">
+      <div class=" w-full p-4 my-10">
+   <!-- == BOOKING AND TEXTS == -->
+          <div class="header-text">
+            <div class="font-semibold">
+               <p>Bookings</p>
+            </div>
+            <div class="text-xs text-slate-500 mb-6">
+              <p>See upcoming and past events booked through you event type link</p>
+            </div>
+          </div>
+         <!-- == TAB AND TAB INDICATOR == -->
+         <div class="tab">
+         <div class="flex space-x-7">
+            <button id="cursor" onclick="openbooking(event, 'upcoming')" class="cursor-pointer tablinks  text-sm mb-3 capitalize text-slate-400 font-semibold  ">upcoming</button>
+            <button id="cursor" onclick="openbooking(event, 'cancelled')" class="cursor-pointer  tablinks text-sm mb-3 capitalize text-slate-400 font-semibold">cancelled</button>
+            <button id="cursor" class="cursor-pointer tablinks  text-sm mb-3 capitalize text-slate-400 font-semibold">past</button>
+          </div>
+          <div class="tabIndicators" ></div>
+        </div>
+         <hr class="mb-3">
+
+         <div id="upcoming" class="tabcontent">
+           <div class="bg-white border flex p-5">
+            <div class="w-20">
+              lorelsssssss
+            </div>
+            <div class="w-6/12">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla rem dignissimos praesentium. Itaque delectus animi libero reiciendis voluptatibus, cupiditate optio eligendi architecto, aliquid expedita rem, dolor assumenda accusantium nisi? Quisquam.
+            </div>
+           </div>
+         </div>
+         <div id="cancelled" class="tabcontent">
+          <div class="bg-white border flex p-5">
+           <div class="w-20">
+             lrem
+           </div>
+           <div class="w-6/12">
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla rem dignissimos praesentium. Itaque delectus animi libero reiciendis voluptatibus, cupiditate optio eligendi architecto, aliquid expedita rem, dolor assumenda accusantium nisi? Quisquam.
+           </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- script -->
+    
+      <script src="assets/scripts/tabscript.js"></script>
+  </body>
+</html>
