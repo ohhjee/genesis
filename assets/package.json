@@ -1,0 +1,14 @@
+{
+  "main": "index.js",
+  "devDependencies": {
+    "tailwindcss": "^3.0.23"
+  },
+  "scripts": {
+    "build:css": "tailwindcss -i src/style.css -o css/style.css",
+    "watch": "tailwindcss build src/style.css -o css/style.css --watch"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.4",
+    "flowbite": "^1.4.1"
+  }
+}

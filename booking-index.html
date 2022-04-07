@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- m-auto bottom-60 left-0  right-0 top-auto absolute -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- == FONTAWESOME ICON == -->
+    <link
+      rel="stylesheet"
+      href="assets/fontawesome-free-6.1.1-web/css/all.css"
+    />
+    <!-- == GOOGLE FONT == -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- == TAILWIND STYLE CSS == -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+
+    <!-- == TAB CSS == -->
+    <link rel="stylesheet" href="assets/css/tab.css" />
+  </head>
+  <body class="bg-gray-100">
+    <div class="w-full p-4 my-10">
+      <!-- == BOOKING AND TEXTS == -->
+      <div class="header-text">
+        <div class="font-semibold">
+          <p>Bookings</p>
+        </div>
+        <div class="text-xs text-slate-500 mb-6">
+          <p>See upcoming and past events booked through you event type link</p>
+        </div>
+      </div>
+      <!-- == TAB AND TAB INDICATOR == -->
+      <div class="tab">
+        <div class="flex space-x-7">
+          <button
+            id="cursor"
+            onclick="openbooking(event, 'upcoming')"
+            class="cursor-pointer tablinks text-sm mb-3 capitalize text-slate-400 font-semibold"
+          >
+            upcoming
+          </button>
+          <button
+            id="cursor"
+            onclick="openbooking(event, 'cancelled')"
+            class="cursor-pointer tablinks text-sm mb-3 capitalize text-slate-400 font-semibold"
+          >
+            cancelled
+          </button>
+          <button
+            id="cursor"
+            onclick="openbooking(event, 'past')"
+            class="cursor-pointer tablinks text-sm mb-3 capitalize text-slate-400 font-semibold"
+          >
+            past
+          </button>
+        </div>
+        <div class="tabIndicators"></div>
+      </div>
+      <hr class="mb-3" />
+      <!-- == UPCOMING EVENTS  == -->
+      <div id="upcoming" class="tabcontent">
+        <div class="bg-white border block lg:flex p-5">
+          <div class="w-full lg:6/12 flex lg:mx-2 text-sm md:text-sm ">
+            <div class="w-3/12">
+              <div class="md:text-sm text-xs">
+                <p>wed, 29 Dec</p>
+              </div>
+              <div class="text-xs text-slate-400 my-3">
+                <p>16:30- 16:45</p>
+              </div>
+            </div>
+          <div class="w-10/12">
+           <p> 15 Min Meeting between Daniel Tonel and Test</p>
+           <p class="text-sm text-slate-400 my-1">"asfasdf"</p>
+           <p class="text-sm my-1">asdf@asdf.asdf</p>
+          </div>
+          </div>
+          <div class="lg:w-4/12 w-full justify-center flex">
+            <div class=" p-2">
+             <a href="#" class="border w-full justify-center m-auto lg:m-0 flex items-center p-2"> 
+              <i class="fa-solid fa-xmark mr-2"></i>
+              <span class="capitalize">cancel</span>
+            </a>
+            </div>
+            <div class=" p-2">
+              <a href="#" class="border w-full justify-center m-auto lg:m-0 flex items-center p-2"> 
+                <i class="fa-regular fa-clock mr-2"></i>
+               <span class="capitalize">reschedule</span>
+             </a>
+          </div>
+        </div>
+        </div>
+        <div class="">
+          <div class=" p-2">
+            <div class="border w-full lg:w-3/12 bg-gray-400 justify-center m-auto flex items-center p-2"> 
+             <span class="capitalize text-white">No more result</span>
+            </div>
+        </div>
+        </div>
+      </div>
+      <!-- == CANCELLED EVENT == -->
+      <div id="cancelled" class="tabcontent">
+        <div class="bg-white border block lg:flex p-5">
+          <div class="w-full lg:6/12 flex lg:mx-2 text-sm md:text-sm ">
+            <div class="w-3/12">
+              <div class="md:text-sm text-xs">
+                <p>wed, 29 Dec</p>
+              </div>
+              <div class="text-xs text-slate-400 my-3">
+                <p>16:30- 16:45</p>
+              </div>
+            </div>
+          <div class="w-10/12">
+           <p> 15 Min Meeting between Daniel Tonel and Test</p>
+           <p class="text-sm text-slate-400 my-1">"asfasdf" this is for cancel</p>
+           <p class="text-sm my-1">asdf@asdf.asdf</p>
+          </div>
+          </div>
+          <div class="lg:w-4/12 w-full justify-center flex">
+            <div class=" p-2">
+             <a href="#" class="border w-full justify-center m-auto lg:m-0 flex items-center p-2"> 
+              <i class="fa-solid fa-xmark mr-2"></i>
+              <span class="capitalize">cancel</span>
+            </a>
+            </div>
+            <div class=" p-2">
+              <a href="#" class="border w-full justify-center m-auto lg:m-0 flex items-center p-2"> 
+                <i class="fa-regular fa-clock mr-2"></i>
+               <span class="capitalize">reschedule</span>
+             </a>
+          </div>
+        </div>
+        </div>
+        <div class="">
+          <div class=" p-2">
+            <div class="border w-full lg:w-3/12 bg-gray-400 justify-center m-auto flex items-center p-2"> 
+             <span class="capitalize text-white">No more result</span>
+            </div>
+        </div>
+        </div>
+      </div>
+
+      <!-- == PAST EVENT == -->
+      <div id="past" class="tabcontent">
+        <div class="bg-white border block lg:flex p-5">
+          <div class="w-full lg:6/12 flex lg:mx-2 text-sm md:text-sm ">
+            <div class="w-3/12">
+              <div class="md:text-sm text-xs">
+                <p>wed, 29 Dec</p>
+              </div>
+              <div class="text-xs text-slate-400 my-3">
+                <p>16:30- 16:45</p>
+              </div>
+            </div>
+          <div class="w-10/12">
+           <p> 15 Min Meeting between Daniel Tonel and Test</p>
+           <p class="text-sm text-slate-400 my-1">"asfasdf" this is for past</p>
+           <p class="text-sm my-1">asdf@asdf.asdf</p>
+          </div>
+          </div>
+          <div class="lg:w-4/12 w-full justify-center flex">
+            <div class=" p-2">
+             <a href="#" class="border w-full justify-center m-auto lg:m-0 flex items-center p-2"> 
+              <i class="fa-solid fa-xmark mr-2"></i>
+              <span class="capitalize">cancel</span>
+            </a>
+            </div>
+            <div class=" p-2">
+              <a href="#" class="border w-full justify-center m-auto lg:m-0 flex items-center p-2"> 
+                <i class="fa-regular fa-clock mr-2"></i>
+               <span class="capitalize">reschedule</span>
+             </a>
+          </div>
+        </div>
+        </div>
+        <div class="">
+          <div class=" p-2">
+            <div class="border w-full lg:w-3/12 bg-gray-400 justify-center m-auto flex items-center p-2"> 
+             <span class="capitalize text-white">No more result</span>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- script -->
+
+    <script src="assets/scripts/tabscript.js"></script>
+  </body>
+</html>

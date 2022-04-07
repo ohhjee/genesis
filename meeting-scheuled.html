@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- m-auto bottom-60 left-0  right-0 top-auto absolute -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- == FONTAWESOME == -->
+    <link
+      rel="stylesheet"
+      href="assets/fontawesome-free-6.1.1-web/css/all.css"
+    />
+       <!-- == GOOGLE FONT == -->
+       <link
+       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,300;1,400&display=swap"
+       rel="stylesheet"
+     />
+     <!-- == TAILWIND CSS == -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-100">
+    <div class="containers flex">
+      <div
+        class="content-login-div   w-full md:w-8/12 p-8 md:px-16 lg:px-40 lg:w-7/12 m-auto"
+      >
+        <div class="bg-white border p-4">
+          <!-- == SCHEDULED-MESSAGE-HEADER  == -->
+          <div class="text-center">
+            <!-- == checked icon == -->
+            <div class="flex justify-center">
+              <div class="icon-div">
+                <div
+                  class="bg-green-200 flex rounded-full h-10 items-center justify-center w-10"
+                >
+                  <i class="fas fa-check text-green-500"></i>
+                </div>
+              </div>
+            </div>
+            <div class="my-3 text-2xl font-semibold">
+              <div class="meeting-text">This meeting is scheduled</div>
+            </div>
+            <!-- == MAILED MESSAGE == -->
+            <div class="text-center text-sm text-slate-700 font-medium">
+              <p>
+                We emailed you and the other attendees a calender invitation
+                will all the details.
+              </p>
+            </div>
+          </div>
+          <!-- == horizontal rule == -->
+          <hr class="my-4" />
+          <!-- == MEETING DETAILS == -->
+          <div class="flex text-sm pb-3">
+            <div class="w-4/12 font-semibold">
+              <p>what</p>
+            </div>
+            <div class="w-11/12 font-medium text-gray-700">
+              15 Min Meeting between Daniel Tonel and Test
+            </div>
+          </div>
+          <div class="flex text-sm">
+            <div class="w-4/12 font-semibold">
+              <p>when</p>
+            </div>
+            <div class="w-11/12 font-medium text-gray-700">
+              Wednesday, 29 December 2021 <br />
+              4:30pm - 15 mins
+              <span class="text-slate-500">(Europe/Vienna)</span>
+            </div>
+          </div>
+          <!-- == horizontal rule == -->
+          <hr class="my-4" />
+          <!-- == ADD TO CALENDER == -->
+          <div class="flex items-center mt-4">
+            <div class="text-xs md:text-sm w-4/12 font-semibold">
+              <p>Add to Calender</p>
+            </div>
+            <div class="flex justify-between text-right w-8/12">
+              <div
+                class="border text-xs md:text-sm flex items-center justify-center w-10 h-10 m-auto"
+              >
+                <i class="fab fa-google"></i>
+              </div>
+              <div
+                class="border text-xs md:text-sm flex items-center mx-3 justify-center w-10 h-10 m-auto"
+              >
+              <img src="assets/images/font-icon/outlook.png" alt="">
+              </div>
+              <div
+                class="border text-xs md:text-sm flex items-center justify-center w-10 h-10 m-auto"
+              >
+              <img src="assets/images/font-icon/office.png" alt="">
+
+              </div>
+              <div
+                class="border text-xs md:text-sm flex items-center mx-3 justify-center w-10 h-10 m-auto"
+              >
+              <img src="assets/images/font-icon/ics-file.png" alt="">
+              </div>
+            </div>
+          </div>
+          <!-- == horizontal rule == -->
+          <hr class="my-4" />
+          <!-- == BOOKING LINK == -->
+          <div class="text-center text-xs text-gray-400">
+            <p>Create your own booking link with cal.com</p>
+          </div>
+          <!-- == BOOKING LINK FORM == -->
+          <form action="">
+            <div class="my-4 flex">
+              <input
+                type="text"
+                name="username"
+                id="LINK-BOOKING"
+                placeholder="asdf@asdf.asdf"
+                class="border font-medium outline-0 py-2 w-8/12 md:w-9/12 px-3"
+              />
+              <button class="p-2 whitespace-nowrap w-6/12 text-xs md:text-sm font-semibold md:w-3/12 bg-black text-white"> Try it for free </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
