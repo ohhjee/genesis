@@ -1625,5 +1625,10 @@ input{
     font-size: 1.875rem;
     line-height: 2.25rem;
   }
+
+  .lg\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
 }
 
