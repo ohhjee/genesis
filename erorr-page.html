@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- == FONTAWESOME == -->
+    <link
+      rel="stylesheet"
+      href="assets/fontawesome-free-6.1.1-web/css/all.css"
+    />
+    <!-- == GOOGLE FONT == -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- == TAILWIND CSS == -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <title>Erorr Page</title>
+  </head>
+  <body class="bg-gray-300">
+    <div class="containers flex">
+      <div
+        class="content-login-div w-full  p-8 md:px-16 lg:px-40 m-auto"
+      >
+        <!-- == ERROR DIV == -->
+        <div class="flex mb-7 justify-center">
+          <!-- == ERROR 404 == -->
+          <div class="text-purple-700 flex items-center font-semibold text-xl md:text-3xl">
+            <p>404</p>
+          </div>
+          <div class="border mx-6"></div>
+          <!-- == ERROR MESSAGE == -->
+          <div class="error-message">
+            <p class="md:text-3xl text-2xl  font-semibold">Page not found</p>
+            <div class="sm:text-2xl lg:text-sm text-slate-500 ">
+              <p>Please click the url in the address bar and try again.</p>
+            </div>
+          </div>
+        </div>
+        <!-- == LINK ANCHOR== -->
+        <div class="go-home flex justify-center space-x-4">
+          <a href="#" class="py-2 px-3 text-xs md:text-sm bg-purple-900 rounded  text-white">Go back home</a>
+          <a href="#" class="py-2 px-3 text-xs md:text-sm rounded bg-purple-300 text-purple-900 font-medium">Contact support</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
